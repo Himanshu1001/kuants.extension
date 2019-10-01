@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Kuants",
+    "version": "0.1",
+
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.moneycontrol.com/india/stockpricequote/*"
+          ],
+          "js": ["content.js"]
+        }
+      ],
+
+      "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html",
+        "default_title": "AlgoLab"
+      },
+      "permissions" : ["tabs","notifications"],
+      "background": {
+        "scripts": ["background.js"]
+      }
+      
+      
+}
+
+
+
+
+  
